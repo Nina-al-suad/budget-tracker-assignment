@@ -1,3 +1,5 @@
+package com.example.budgettracker
+
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.budgettracker.R
@@ -16,7 +18,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class SettingsActivity : AppCompatActivity() {
+class com.example.budgettracker.SettingsActivity : AppCompatActivity() {
 
     private lateinit var editTextMonthlyBudget: EditText
     private lateinit var spinnerCurrency: Spinner

@@ -16,6 +16,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
+
+
+//expense activity class
 class ExpensesActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
@@ -45,6 +48,9 @@ class ExpensesActivity : AppCompatActivity() {
         loadExpenses()
     }
 
+
+    //function to fetch/load the expenses
+
     private fun loadExpenses() {
         CoroutineScope(Dispatchers.IO).launch {
             val expenses = db.expenseDao().getAll()
@@ -58,6 +64,8 @@ class ExpensesActivity : AppCompatActivity() {
             }
         }
     }
+
+    //function to delete an expense
 
     private fun deleteExpense(expense: Expense) {
         CoroutineScope(Dispatchers.IO).launch {

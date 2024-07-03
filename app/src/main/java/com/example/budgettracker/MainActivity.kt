@@ -1,12 +1,14 @@
 package com.example.budgettracker
 
-import SettingsActivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
+
+
+// application initialization class
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -12,6 +12,9 @@ import com.example.budgettracker.data.database.expense.Expense
 import com.example.budgettracker.data.database.expense.ExpenseDatabase
 import java.util.*
 
+
+//add expense activity class
+
 class AddExpenseActivity : AppCompatActivity() {
 
     private lateinit var expenseText: EditText
@@ -50,6 +53,7 @@ class AddExpenseActivity : AppCompatActivity() {
         return true
     }
 
+    // function to show the date picker dialog
     private fun showDatePickerDialog() {
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)
@@ -66,6 +70,8 @@ class AddExpenseActivity : AppCompatActivity() {
         )
         datePickerDialog.show()
     }
+
+    //function to save an expense
 
     private fun saveExpense() {
         val text = expenseText.text.toString()
